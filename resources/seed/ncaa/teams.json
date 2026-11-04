@@ -1,0 +1,1223 @@
+{
+  "league": "ncaa",
+  "teams": [
+    {
+      "id": "ncaa-alabama",
+      "name": "Alabama",
+      "nickname": "Crimson Tide",
+      "abbr": "ALA",
+      "city": "Tuscaloosa",
+      "colors": {
+        "primary": "#9e1b32",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#9e1b32"
+      },
+      "stadium": {
+        "name": "Bryant-Denny Stadium",
+        "capacity": 100077,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 4,
+      "prestige": 192,
+      "budget": 8500000,
+      "aiProfile": "contender",
+      "preferredOffense": "power_run",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-georgia",
+      "name": "Georgia",
+      "nickname": "Bulldogs",
+      "abbr": "UGA",
+      "city": "Athens",
+      "colors": {
+        "primary": "#ba0c2f",
+        "secondary": "#000000"
+      },
+      "altColors": {
+        "primary": "#000000",
+        "secondary": "#ba0c2f"
+      },
+      "stadium": {
+        "name": "Sanford Stadium",
+        "capacity": 92746,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 4,
+      "prestige": 196,
+      "budget": 8600000,
+      "aiProfile": "contender",
+      "preferredOffense": "smashmouth",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-lsu",
+      "name": "LSU",
+      "nickname": "Tigers",
+      "abbr": "LSU",
+      "city": "Baton Rouge",
+      "colors": {
+        "primary": "#461d7c",
+        "secondary": "#fdd023"
+      },
+      "altColors": {
+        "primary": "#fdd023",
+        "secondary": "#461d7c"
+      },
+      "stadium": {
+        "name": "Tiger Stadium",
+        "capacity": 102321,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 4,
+      "prestige": 176,
+      "budget": 8300000,
+      "aiProfile": "win-now",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-tennessee",
+      "name": "Tennessee",
+      "nickname": "Volunteers",
+      "abbr": "TEN",
+      "city": "Knoxville",
+      "colors": {
+        "primary": "#ff8200",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#ff8200"
+      },
+      "stadium": {
+        "name": "Neyland Stadium",
+        "capacity": 101915,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 3,
+      "prestige": 162,
+      "budget": 8100000,
+      "aiProfile": "analytics",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-texasam",
+      "name": "Texas A&M",
+      "nickname": "Aggies",
+      "abbr": "TAM",
+      "city": "College Station",
+      "colors": {
+        "primary": "#500000",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#500000"
+      },
+      "stadium": {
+        "name": "Kyle Field",
+        "capacity": 102733,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 3,
+      "prestige": 156,
+      "budget": 8200000,
+      "aiProfile": "balanced",
+      "preferredOffense": "power_run",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-florida",
+      "name": "Florida",
+      "nickname": "Gators",
+      "abbr": "FLA",
+      "city": "Gainesville",
+      "colors": {
+        "primary": "#0021a5",
+        "secondary": "#fa4616"
+      },
+      "altColors": {
+        "primary": "#fa4616",
+        "secondary": "#0021a5"
+      },
+      "stadium": {
+        "name": "Ben Hill Griffin Stadium",
+        "capacity": 88548,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 3,
+      "prestige": 166,
+      "budget": 8000000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-olemiss",
+      "name": "Ole Miss",
+      "nickname": "Rebels",
+      "abbr": "OLE",
+      "city": "Oxford",
+      "colors": {
+        "primary": "#14213d",
+        "secondary": "#ce1126"
+      },
+      "altColors": {
+        "primary": "#ce1126",
+        "secondary": "#14213d"
+      },
+      "stadium": {
+        "name": "Vaught-Hemingway Stadium",
+        "capacity": 64038,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "SEC",
+      "reputation": 3,
+      "prestige": 142,
+      "budget": 7900000,
+      "aiProfile": "analytics",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-clemson",
+      "name": "Clemson",
+      "nickname": "Tigers",
+      "abbr": "CLE",
+      "city": "Clemson",
+      "colors": {
+        "primary": "#f56600",
+        "secondary": "#522d80"
+      },
+      "altColors": {
+        "primary": "#522d80",
+        "secondary": "#f56600"
+      },
+      "stadium": {
+        "name": "Memorial Stadium",
+        "capacity": 81500,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 4,
+      "prestige": 186,
+      "budget": 8400000,
+      "aiProfile": "contender",
+      "preferredOffense": "pistol_rpo",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-fsu",
+      "name": "Florida State",
+      "nickname": "Seminoles",
+      "abbr": "FSU",
+      "city": "Tallahassee",
+      "colors": {
+        "primary": "#782f40",
+        "secondary": "#ceb888"
+      },
+      "altColors": {
+        "primary": "#ceb888",
+        "secondary": "#782f40"
+      },
+      "stadium": {
+        "name": "Doak Campbell Stadium",
+        "capacity": 79560,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 4,
+      "prestige": 172,
+      "budget": 8200000,
+      "aiProfile": "win-now",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-miami",
+      "name": "Miami",
+      "nickname": "Hurricanes",
+      "abbr": "MIA",
+      "city": "Miami Gardens",
+      "colors": {
+        "primary": "#f47321",
+        "secondary": "#005030"
+      },
+      "altColors": {
+        "primary": "#005030",
+        "secondary": "#f47321"
+      },
+      "stadium": {
+        "name": "Hard Rock Stadium",
+        "capacity": 65326,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 3,
+      "prestige": 162,
+      "budget": 8100000,
+      "aiProfile": "balanced",
+      "preferredOffense": "vertical",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-unc",
+      "name": "North Carolina",
+      "nickname": "Tar Heels",
+      "abbr": "UNC",
+      "city": "Chapel Hill",
+      "colors": {
+        "primary": "#4b9cd3",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#4b9cd3"
+      },
+      "stadium": {
+        "name": "Kenan Stadium",
+        "capacity": 50500,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 3,
+      "prestige": 146,
+      "budget": 7900000,
+      "aiProfile": "analytics",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-louisville",
+      "name": "Louisville",
+      "nickname": "Cardinals",
+      "abbr": "LOU",
+      "city": "Louisville",
+      "colors": {
+        "primary": "#ad0000",
+        "secondary": "#000000"
+      },
+      "altColors": {
+        "primary": "#000000",
+        "secondary": "#ad0000"
+      },
+      "stadium": {
+        "name": "L&N Federal Credit Union Stadium",
+        "capacity": 60800,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 2,
+      "prestige": 132,
+      "budget": 7800000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-ncstate",
+      "name": "NC State",
+      "nickname": "Wolfpack",
+      "abbr": "NCS",
+      "city": "Raleigh",
+      "colors": {
+        "primary": "#cc0000",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#cc0000"
+      },
+      "stadium": {
+        "name": "Carter-Finley Stadium",
+        "capacity": 57583,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 2,
+      "prestige": 130,
+      "budget": 7700000,
+      "aiProfile": "balanced",
+      "preferredOffense": "west_coast",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-vatech",
+      "name": "Virginia Tech",
+      "nickname": "Hokies",
+      "abbr": "VT",
+      "city": "Blacksburg",
+      "colors": {
+        "primary": "#630031",
+        "secondary": "#cf4420"
+      },
+      "altColors": {
+        "primary": "#cf4420",
+        "secondary": "#630031"
+      },
+      "stadium": {
+        "name": "Lane Stadium",
+        "capacity": 66233,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "ACC",
+      "reputation": 3,
+      "prestige": 138,
+      "budget": 7800000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "power_run",
+      "preferredDefense": "46_blitz"
+    },
+    {
+      "id": "ncaa-ohiostate",
+      "name": "Ohio State",
+      "nickname": "Buckeyes",
+      "abbr": "OSU",
+      "city": "Columbus",
+      "colors": {
+        "primary": "#bb0000",
+        "secondary": "#666666"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#bb0000"
+      },
+      "stadium": {
+        "name": "Ohio Stadium",
+        "capacity": 102780,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 4,
+      "prestige": 188,
+      "budget": 8500000,
+      "aiProfile": "contender",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-michigan",
+      "name": "Michigan",
+      "nickname": "Wolverines",
+      "abbr": "MIC",
+      "city": "Ann Arbor",
+      "colors": {
+        "primary": "#00274c",
+        "secondary": "#ffcb05"
+      },
+      "altColors": {
+        "primary": "#ffcb05",
+        "secondary": "#00274c"
+      },
+      "stadium": {
+        "name": "Michigan Stadium",
+        "capacity": 107601,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 4,
+      "prestige": 185,
+      "budget": 8500000,
+      "aiProfile": "contender",
+      "preferredOffense": "power_run",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-pennstate",
+      "name": "Penn State",
+      "nickname": "Nittany Lions",
+      "abbr": "PSU",
+      "city": "University Park",
+      "colors": {
+        "primary": "#041e42",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#041e42"
+      },
+      "stadium": {
+        "name": "Beaver Stadium",
+        "capacity": 106572,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 4,
+      "prestige": 168,
+      "budget": 8300000,
+      "aiProfile": "contender",
+      "preferredOffense": "power_run",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-oregon",
+      "name": "Oregon",
+      "nickname": "Ducks",
+      "abbr": "ORE",
+      "city": "Eugene",
+      "colors": {
+        "primary": "#154733",
+        "secondary": "#fee123"
+      },
+      "altColors": {
+        "primary": "#fee123",
+        "secondary": "#154733"
+      },
+      "stadium": {
+        "name": "Autzen Stadium",
+        "capacity": 54000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 4,
+      "prestige": 172,
+      "budget": 8400000,
+      "aiProfile": "win-now",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-usc",
+      "name": "USC",
+      "nickname": "Trojans",
+      "abbr": "USC",
+      "city": "Los Angeles",
+      "colors": {
+        "primary": "#990000",
+        "secondary": "#ffcc00"
+      },
+      "altColors": {
+        "primary": "#ffcc00",
+        "secondary": "#990000"
+      },
+      "stadium": {
+        "name": "Los Angeles Memorial Coliseum",
+        "capacity": 77500,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 3,
+      "prestige": 158,
+      "budget": 8200000,
+      "aiProfile": "win-now",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-wisconsin",
+      "name": "Wisconsin",
+      "nickname": "Badgers",
+      "abbr": "WIS",
+      "city": "Madison",
+      "colors": {
+        "primary": "#c5050c",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#c5050c"
+      },
+      "stadium": {
+        "name": "Camp Randall Stadium",
+        "capacity": 76057,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 3,
+      "prestige": 130,
+      "budget": 8000000,
+      "aiProfile": "balanced",
+      "preferredOffense": "smashmouth",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-iowa",
+      "name": "Iowa",
+      "nickname": "Hawkeyes",
+      "abbr": "IOW",
+      "city": "Iowa City",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#ffcd00"
+      },
+      "altColors": {
+        "primary": "#ffcd00",
+        "secondary": "#000000"
+      },
+      "stadium": {
+        "name": "Kinnick Stadium",
+        "capacity": 69250,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big Ten",
+      "reputation": 3,
+      "prestige": 124,
+      "budget": 7900000,
+      "aiProfile": "balanced",
+      "preferredOffense": "power_run",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-texas",
+      "name": "Texas",
+      "nickname": "Longhorns",
+      "abbr": "TEX",
+      "city": "Austin",
+      "colors": {
+        "primary": "#bf5700",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#bf5700"
+      },
+      "stadium": {
+        "name": "Darrell K Royal-Texas Memorial Stadium",
+        "capacity": 100119,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 4,
+      "prestige": 182,
+      "budget": 8500000,
+      "aiProfile": "contender",
+      "preferredOffense": "vertical",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-oklahomastate",
+      "name": "Oklahoma State",
+      "nickname": "Cowboys",
+      "abbr": "OKS",
+      "city": "Stillwater",
+      "colors": {
+        "primary": "#ff7300",
+        "secondary": "#000000"
+      },
+      "altColors": {
+        "primary": "#000000",
+        "secondary": "#ff7300"
+      },
+      "stadium": {
+        "name": "Boone Pickens Stadium",
+        "capacity": 55509,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 3,
+      "prestige": 135,
+      "budget": 8000000,
+      "aiProfile": "win-now",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-kstate",
+      "name": "Kansas State",
+      "nickname": "Wildcats",
+      "abbr": "KSU",
+      "city": "Manhattan",
+      "colors": {
+        "primary": "#512888",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#512888"
+      },
+      "stadium": {
+        "name": "Bill Snyder Family Stadium",
+        "capacity": 50000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 3,
+      "prestige": 128,
+      "budget": 7900000,
+      "aiProfile": "balanced",
+      "preferredOffense": "pistol_rpo",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-utah",
+      "name": "Utah",
+      "nickname": "Utes",
+      "abbr": "UTA",
+      "city": "Salt Lake City",
+      "colors": {
+        "primary": "#cc0000",
+        "secondary": "#000000"
+      },
+      "altColors": {
+        "primary": "#000000",
+        "secondary": "#cc0000"
+      },
+      "stadium": {
+        "name": "Rice-Eccles Stadium",
+        "capacity": 51444,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 3,
+      "prestige": 138,
+      "budget": 8000000,
+      "aiProfile": "contender",
+      "preferredOffense": "power_run",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-arizona",
+      "name": "Arizona",
+      "nickname": "Wildcats",
+      "abbr": "ARZ",
+      "city": "Tucson",
+      "colors": {
+        "primary": "#ab0520",
+        "secondary": "#0c234b"
+      },
+      "altColors": {
+        "primary": "#0c234b",
+        "secondary": "#ab0520"
+      },
+      "stadium": {
+        "name": "Arizona Stadium",
+        "capacity": 50782,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 2,
+      "prestige": 108,
+      "budget": 7600000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-baylor",
+      "name": "Baylor",
+      "nickname": "Bears",
+      "abbr": "BAY",
+      "city": "Waco",
+      "colors": {
+        "primary": "#154734",
+        "secondary": "#ffb81c"
+      },
+      "altColors": {
+        "primary": "#ffb81c",
+        "secondary": "#154734"
+      },
+      "stadium": {
+        "name": "McLane Stadium",
+        "capacity": 45140,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 2,
+      "prestige": 115,
+      "budget": 7700000,
+      "aiProfile": "balanced",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-tcu",
+      "name": "TCU",
+      "nickname": "Horned Frogs",
+      "abbr": "TCU",
+      "city": "Fort Worth",
+      "colors": {
+        "primary": "#4d1979",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#4d1979"
+      },
+      "stadium": {
+        "name": "Amon G. Carter Stadium",
+        "capacity": 47000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Big 12",
+      "reputation": 3,
+      "prestige": 132,
+      "budget": 7900000,
+      "aiProfile": "analytics",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-washington",
+      "name": "Washington",
+      "nickname": "Huskies",
+      "abbr": "WAS",
+      "city": "Seattle",
+      "colors": {
+        "primary": "#4b2e83",
+        "secondary": "#b7a57a"
+      },
+      "altColors": {
+        "primary": "#b7a57a",
+        "secondary": "#4b2e83"
+      },
+      "stadium": {
+        "name": "Husky Stadium",
+        "capacity": 70083,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Pac",
+      "reputation": 3,
+      "prestige": 150,
+      "budget": 7400000,
+      "aiProfile": "balanced",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-oregonstate",
+      "name": "Oregon State",
+      "nickname": "Beavers",
+      "abbr": "OSU",
+      "city": "Corvallis",
+      "colors": {
+        "primary": "#dc4405",
+        "secondary": "#000000"
+      },
+      "altColors": {
+        "primary": "#000000",
+        "secondary": "#dc4405"
+      },
+      "stadium": {
+        "name": "Reser Stadium",
+        "capacity": 35000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Pac",
+      "reputation": 2,
+      "prestige": 112,
+      "budget": 7000000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "power_run",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-wsu",
+      "name": "Washington State",
+      "nickname": "Cougars",
+      "abbr": "WSU",
+      "city": "Pullman",
+      "colors": {
+        "primary": "#981e32",
+        "secondary": "#5e6a71"
+      },
+      "altColors": {
+        "primary": "#5e6a71",
+        "secondary": "#981e32"
+      },
+      "stadium": {
+        "name": "Martin Stadium",
+        "capacity": 32952,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Pac",
+      "reputation": 2,
+      "prestige": 98,
+      "budget": 6900000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-stanford",
+      "name": "Stanford",
+      "nickname": "Cardinal",
+      "abbr": "STA",
+      "city": "Stanford",
+      "colors": {
+        "primary": "#8c1515",
+        "secondary": "#4d4f53"
+      },
+      "altColors": {
+        "primary": "#4d4f53",
+        "secondary": "#8c1515"
+      },
+      "stadium": {
+        "name": "Stanford Stadium",
+        "capacity": 50424,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Pac",
+      "reputation": 3,
+      "prestige": 132,
+      "budget": 7200000,
+      "aiProfile": "analytics",
+      "preferredOffense": "power_run",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-cal",
+      "name": "California",
+      "nickname": "Golden Bears",
+      "abbr": "CAL",
+      "city": "Berkeley",
+      "colors": {
+        "primary": "#003262",
+        "secondary": "#fdb515"
+      },
+      "altColors": {
+        "primary": "#fdb515",
+        "secondary": "#003262"
+      },
+      "stadium": {
+        "name": "California Memorial Stadium",
+        "capacity": 63000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Pac",
+      "reputation": 2,
+      "prestige": 105,
+      "budget": 7000000,
+      "aiProfile": "balanced",
+      "preferredOffense": "west_coast",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-ucla",
+      "name": "UCLA",
+      "nickname": "Bruins",
+      "abbr": "UCL",
+      "city": "Los Angeles",
+      "colors": {
+        "primary": "#2d68c4",
+        "secondary": "#f2a900"
+      },
+      "altColors": {
+        "primary": "#f2a900",
+        "secondary": "#2d68c4"
+      },
+      "stadium": {
+        "name": "Rose Bowl",
+        "capacity": 88565,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Pac",
+      "reputation": 3,
+      "prestige": 128,
+      "budget": 7300000,
+      "aiProfile": "win-now",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-boisestate",
+      "name": "Boise State",
+      "nickname": "Broncos",
+      "abbr": "BOI",
+      "city": "Boise",
+      "colors": {
+        "primary": "#0033a0",
+        "secondary": "#d64309"
+      },
+      "altColors": {
+        "primary": "#d64309",
+        "secondary": "#0033a0"
+      },
+      "stadium": {
+        "name": "Albertsons Stadium",
+        "capacity": 36387,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 2,
+      "prestige": 118,
+      "budget": 6600000,
+      "aiProfile": "contender",
+      "preferredOffense": "pistol_rpo",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-memphis",
+      "name": "Memphis",
+      "nickname": "Tigers",
+      "abbr": "MEM",
+      "city": "Memphis",
+      "colors": {
+        "primary": "#003087",
+        "secondary": "#898d8d"
+      },
+      "altColors": {
+        "primary": "#898d8d",
+        "secondary": "#003087"
+      },
+      "stadium": {
+        "name": "Simmons Bank Liberty Stadium",
+        "capacity": 58325,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 2,
+      "prestige": 96,
+      "budget": 6400000,
+      "aiProfile": "win-now",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-tulane",
+      "name": "Tulane",
+      "nickname": "Green Wave",
+      "abbr": "TUL",
+      "city": "New Orleans",
+      "colors": {
+        "primary": "#006747",
+        "secondary": "#418fde"
+      },
+      "altColors": {
+        "primary": "#418fde",
+        "secondary": "#006747"
+      },
+      "stadium": {
+        "name": "Yulman Stadium",
+        "capacity": 30000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 2,
+      "prestige": 92,
+      "budget": 6300000,
+      "aiProfile": "contender",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-smu",
+      "name": "SMU",
+      "nickname": "Mustangs",
+      "abbr": "SMU",
+      "city": "University Park",
+      "colors": {
+        "primary": "#cc0035",
+        "secondary": "#354ca1"
+      },
+      "altColors": {
+        "primary": "#354ca1",
+        "secondary": "#cc0035"
+      },
+      "stadium": {
+        "name": "Gerald J. Ford Stadium",
+        "capacity": 32000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 2,
+      "prestige": 100,
+      "budget": 6600000,
+      "aiProfile": "win-now",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ncaa-appstate",
+      "name": "App State",
+      "nickname": "Mountaineers",
+      "abbr": "APP",
+      "city": "Boone",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#ffcc00"
+      },
+      "altColors": {
+        "primary": "#ffcc00",
+        "secondary": "#000000"
+      },
+      "stadium": {
+        "name": "Kidd Brewer Stadium",
+        "capacity": 30000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 1,
+      "prestige": 82,
+      "budget": 6100000,
+      "aiProfile": "balanced",
+      "preferredOffense": "power_run",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ncaa-uconn",
+      "name": "UConn",
+      "nickname": "Huskies",
+      "abbr": "UCN",
+      "city": "East Hartford",
+      "colors": {
+        "primary": "#000e2f",
+        "secondary": "#7c878e"
+      },
+      "altColors": {
+        "primary": "#7c878e",
+        "secondary": "#000e2f"
+      },
+      "stadium": {
+        "name": "Pratt & Whitney Stadium at Rentschler Field",
+        "capacity": 40000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 1,
+      "prestige": 68,
+      "budget": 6000000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "west_coast",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-army",
+      "name": "Army",
+      "nickname": "Black Knights",
+      "abbr": "ARM",
+      "city": "Army",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#d4bf7a"
+      },
+      "altColors": {
+        "primary": "#d4bf7a",
+        "secondary": "#000000"
+      },
+      "stadium": {
+        "name": "Michie Stadium",
+        "capacity": 38000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 2,
+      "prestige": 110,
+      "budget": 6200000,
+      "aiProfile": "balanced",
+      "preferredOffense": "power_run",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ncaa-navy",
+      "name": "Navy",
+      "nickname": "Midshipmen",
+      "abbr": "NAV",
+      "city": "Navy",
+      "colors": {
+        "primary": "#00205b",
+        "secondary": "#c5b783"
+      },
+      "altColors": {
+        "primary": "#c5b783",
+        "secondary": "#00205b"
+      },
+      "stadium": {
+        "name": "Navy-Marine Corps Memorial Stadium",
+        "capacity": 34000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "FBS",
+      "division": "Group of 5",
+      "reputation": 2,
+      "prestige": 106,
+      "budget": 6100000,
+      "aiProfile": "balanced",
+      "preferredOffense": "smashmouth",
+      "preferredDefense": "3-4"
+    }
+  ]
+}

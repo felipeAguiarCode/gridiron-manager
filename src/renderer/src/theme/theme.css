@@ -1,0 +1,466 @@
+@import 'tailwindcss';
+
+@theme {
+  /* tema Gridiron — herda a base escura do Betify, accent âmbar-elétrico (gramado noturno) */
+  --color-bg-base: #0c0f10;
+  --color-bg-raised: #1b2225;
+  --color-surface: #14191b;
+  --color-surface-hover: #1f282b;
+  --color-border: #283236;
+  --color-text-primary: #eef2f4;
+  --color-text-secondary: #9fb0b5;
+  --color-text-muted: #6c7d82;
+
+  /* acento âmbar neon + títulos claros */
+  --color-accent: #ff9f1c;
+  --color-accent-strong: #f77f00;
+  --color-accent-soft: #3a2408;
+  --color-title: #eef2f4;
+
+  --color-neon: #ffb703;
+  --color-gold: #e8c46a;
+  --color-positive: #3fd07a;
+  --color-negative: #f2555f;
+  --color-warning: #f5b73c;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-raise: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-hero: 0 12px 40px rgba(255, 159, 28, 0.28);
+  --shadow-glow: 0 0 22px rgba(255, 159, 28, 0.45);
+
+  --font-display: 'Poppins', 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+:root {
+  /* gradientes — gramado noturno + âmbar neon */
+  --grad-hero: linear-gradient(135deg, #0e1512 0%, #122017 45%, #1d5c34 100%);
+  --grad-neon: linear-gradient(135deg, #f77f00 0%, #ff9f1c 100%);
+
+  /* card tiers (gradientes de raridade) */
+  --tier-bronze-from: #b07a44;
+  --tier-bronze-to: #7c5320;
+  --tier-silver-from: #aab4c2;
+  --tier-silver-to: #7b8595;
+  --tier-gold-from: #f0c95a;
+  --tier-gold-to: #c79320;
+  --tier-elite-from: #22c1a6;
+  --tier-elite-to: #0e7c8a;
+  --tier-legend-from: #c084fc;
+  --tier-legend-to: #7c2fb0;
+}
+
+[data-tier='bronze'] { --tier-from: var(--tier-bronze-from); --tier-to: var(--tier-bronze-to); }
+[data-tier='silver'] { --tier-from: var(--tier-silver-from); --tier-to: var(--tier-silver-to); }
+[data-tier='gold'] { --tier-from: var(--tier-gold-from); --tier-to: var(--tier-gold-to); }
+[data-tier='elite'] { --tier-from: var(--tier-elite-from); --tier-to: var(--tier-elite-to); }
+[data-tier='legend'] { --tier-from: var(--tier-legend-from); --tier-to: var(--tier-legend-to); }
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* utilitários de superfície */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.9rem;
+  box-shadow: var(--shadow-card);
+}
+
+.section-title {
+  color: var(--color-title);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.glow {
+  box-shadow: var(--shadow-glow);
+}
+.glow:hover {
+  box-shadow: 0 0 30px rgba(255, 159, 28, 0.6);
+}
+
+/* botão neon — gradiente âmbar + glow */
+.btn-neon {
+  background: var(--grad-neon);
+  color: #1a0f00;
+  box-shadow: var(--shadow-glow);
+  transition:
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+.btn-neon:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 0 32px rgba(255, 159, 28, 0.65);
+}
+
+/* reflexo que varre uma caixa periodicamente (menu inicial) */
+@keyframes sheen {
+  0% {
+    transform: translateX(-140%) skewX(-20deg);
+  }
+  55%,
+  100% {
+    transform: translateX(240%) skewX(-20deg);
+  }
+}
+.sheen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 45%;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  /* backwards: durante o animation-delay a faixa fica no estado do 0% (fora da tela à esquerda),
+     evitando o brilho "travado" no meio da caixa antes de começar a varredura */
+  animation: sheen 5s ease-in-out infinite backwards;
+}
+
+/* reflexo contínuo (sem pausa) — usado nas caixas de liga */
+@keyframes sheen-loop {
+  0% {
+    transform: translateX(-170%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(300%) skewX(-20deg);
+  }
+}
+.sheen-continuous {
+  animation: sheen-loop 2.8s linear infinite;
+}
+
+/* rotas da prancheta "desenhando" do LOS pra fora (estilo Madden) */
+@keyframes route-draw {
+  from {
+    stroke-dashoffset: 60;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.route-draw {
+  stroke-dasharray: 60;
+  animation: route-draw 0.55s ease-out backwards;
+}
+
+/* névoa/fog drifting (seleção de liga) — manchas suaves que vagam devagar */
+@keyframes fog-drift {
+  0% {
+    transform: translate3d(-8%, 0, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(8%, -3%, 0) scale(1.15);
+  }
+}
+@keyframes fog-drift-2 {
+  0% {
+    transform: translate3d(6%, 2%, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(-6%, -2%, 0) scale(1.2);
+  }
+}
+.fog {
+  position: absolute;
+  inset: -25%;
+  pointer-events: none;
+  background:
+    radial-gradient(52% 56% at 20% 40%, rgba(216, 226, 234, 0.42), transparent 72%),
+    radial-gradient(48% 52% at 70% 60%, rgba(196, 208, 220, 0.38), transparent 72%),
+    radial-gradient(44% 48% at 46% 22%, rgba(230, 235, 240, 0.34), transparent 74%),
+    radial-gradient(60% 40% at 50% 85%, rgba(200, 212, 224, 0.28), transparent 78%);
+  filter: blur(46px);
+  animation: fog-drift 30s ease-in-out infinite alternate;
+}
+.fog-2 {
+  background:
+    radial-gradient(54% 54% at 84% 26%, rgba(210, 222, 234, 0.36), transparent 72%),
+    radial-gradient(50% 54% at 26% 74%, rgba(190, 204, 218, 0.34), transparent 74%),
+    radial-gradient(46% 46% at 58% 48%, rgba(220, 228, 236, 0.28), transparent 74%);
+  animation: fog-drift-2 38s ease-in-out infinite alternate;
+}
+
+/* brasas subindo pelo menu principal (partículas leves de fogo) */
+@keyframes ember-rise {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  8% {
+    opacity: var(--ember-op, 0.7);
+  }
+  50% {
+    transform: translate(var(--ember-x, 12px), -48vh) scale(0.82);
+  }
+  85% {
+    opacity: var(--ember-op, 0.7);
+  }
+  100% {
+    transform: translate(calc(var(--ember-x, 12px) * -0.6), -97vh) scale(0.35);
+    opacity: 0;
+  }
+}
+.ember {
+  position: absolute;
+  bottom: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffe08a 0%, #ff9f1c 42%, rgba(247, 127, 0, 0) 72%);
+  box-shadow: 0 0 6px 1px rgba(255, 159, 28, 0.5);
+  pointer-events: none;
+  will-change: transform, opacity;
+  animation: ember-rise linear infinite;
+}
+
+/* contorno de seleção com degradê andante (borda gradiente animada) */
+@keyframes border-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+.grad-border {
+  background: linear-gradient(90deg, #ff9f1c, #ffb703, #f77f00, #ff9f1c, #ffb703);
+  background-size: 300% 100%;
+  animation: border-flow 3s linear infinite;
+  padding: 2px;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* ------------------------- acontecimentos surpresa (ritual das 3 cartas) */
+@keyframes event-glow {
+  0%,
+  100% {
+    box-shadow: inset 0 0 120px rgba(255, 159, 28, 0.12);
+  }
+  50% {
+    box-shadow: inset 0 0 220px rgba(255, 159, 28, 0.28);
+  }
+}
+.event-backdrop {
+  animation: event-glow 2.6s ease-in-out infinite;
+}
+
+@keyframes card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.event-card-float {
+  animation: card-float 3s ease-in-out infinite;
+}
+
+/* embaralhar: as três posições se cruzam antes da escolha */
+@keyframes shuffle-a {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(220px) scale(0.96); }
+  60% { transform: translateX(-220px) scale(1.02); }
+  100% { transform: translateX(0); }
+}
+@keyframes shuffle-b {
+  0% { transform: translateX(0); }
+  35% { transform: translateX(-220px) scale(1.02); }
+  65% { transform: translateX(220px) scale(0.96); }
+  100% { transform: translateX(0); }
+}
+@keyframes shuffle-c {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(-110px) scale(0.98); }
+  60% { transform: translateX(110px) scale(1.01); }
+  100% { transform: translateX(0); }
+}
+.shuffle-a { animation: shuffle-a 1.5s ease-in-out; }
+.shuffle-b { animation: shuffle-b 1.5s ease-in-out; }
+.shuffle-c { animation: shuffle-c 1.5s ease-in-out; }
+
+/* flip 3D da carta escolhida */
+.event-flip {
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.event-flip.flipped {
+  transform: rotateY(180deg);
+}
+.event-face {
+  backface-visibility: hidden;
+}
+.event-face-front {
+  transform: rotateY(180deg);
+}
+
+/* input padrão do mercado/olheiros */
+.input-mk {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-base);
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  outline: none;
+  width: 100%;
+}
+.input-mk:focus {
+  border-color: var(--color-accent);
+}
+
+/* scrollbar branca (lista de times na escolha de franquia) */
+.scrollbar-white::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollbar-white::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.scrollbar-white::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.95);
+  background-clip: padding-box;
+}
+.scrollbar-white::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+/* scrollbar escura */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3630;
+  border-radius: 999px;
+  border: 3px solid var(--color-bg-base);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ============================================================= */
+/* Celebração de grandes jogadas (Touchdown / Fumble) — GameDay   */
+/* ============================================================= */
+
+/* letras "tabolirando" (tremendo/pulando) no título TOUCHDOWN!/FUMBLE! */
+@keyframes bigplay-letter {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg) scale(1);
+  }
+  25% {
+    transform: translateY(-10px) rotate(3deg) scale(1.12);
+  }
+  50% {
+    transform: translateY(0) rotate(-2deg) scale(1);
+  }
+  75% {
+    transform: translateY(5px) rotate(4deg) scale(0.94);
+  }
+}
+.bigplay-letter {
+  display: inline-block;
+  animation: bigplay-letter 0.7s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* pulo estilo Bomberman (SNES) com squash & stretch */
+@keyframes bigplay-jump {
+  0%,
+  100% {
+    transform: translateY(0) scaleX(1) scaleY(1);
+  }
+  15% {
+    transform: translateY(0) scaleX(1.1) scaleY(0.84);
+  }
+  40% {
+    transform: translateY(-42px) scaleX(0.9) scaleY(1.14);
+  }
+  68% {
+    transform: translateY(0) scaleX(1.08) scaleY(0.9);
+  }
+  84% {
+    transform: translateY(-10px) scaleX(0.99) scaleY(1.02);
+  }
+}
+.bigplay-jump {
+  animation: bigplay-jump 1s ease-in-out infinite;
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+
+/* brilho amarelo translúcido pulsante atrás do card */
+@keyframes bigplay-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  50% {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+.bigplay-glow {
+  animation: bigplay-glow 1.6s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+/* fog de estrelas caindo */
+@keyframes star-fall {
+  0% {
+    transform: translateY(-12vh) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(96vh) rotate(240deg);
+    opacity: 0;
+  }
+}
+.star-fall {
+  position: absolute;
+  top: 0;
+  color: var(--color-gold);
+  text-shadow: 0 0 8px rgba(255, 200, 80, 0.9);
+  animation: star-fall linear infinite;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+/* timer estilo stories do Instagram (barra que preenche) */
+@keyframes story-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.story-fill {
+  animation: story-fill linear forwards;
+}

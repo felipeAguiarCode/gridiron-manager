@@ -1,0 +1,237 @@
+{
+  "league": "ufl",
+  "teams": [
+    {
+      "id": "ufl-bir",
+      "name": "Birmingham",
+      "nickname": "Stallions",
+      "abbr": "BIR",
+      "city": "Birmingham",
+      "colors": {
+        "primary": "#9e1b32",
+        "secondary": "#f2a900"
+      },
+      "altColors": {
+        "primary": "#f2a900",
+        "secondary": "#9e1b32"
+      },
+      "stadium": {
+        "name": "Protective Stadium",
+        "capacity": 47100,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "USFL",
+      "division": "",
+      "reputation": 4,
+      "prestige": 160,
+      "budget": 2200000,
+      "aiProfile": "contender",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ufl-mich",
+      "name": "Michigan",
+      "nickname": "Panthers",
+      "abbr": "MIC",
+      "city": "Detroit",
+      "colors": {
+        "primary": "#582c83",
+        "secondary": "#b0b7bc"
+      },
+      "altColors": {
+        "primary": "#b0b7bc",
+        "secondary": "#582c83"
+      },
+      "stadium": {
+        "name": "Ford Field",
+        "capacity": 65000,
+        "surface": "turf",
+        "dome": true
+      },
+      "conference": "USFL",
+      "division": "",
+      "reputation": 3,
+      "prestige": 135,
+      "budget": 2000000,
+      "aiProfile": "balanced",
+      "preferredOffense": "vertical",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ufl-hou",
+      "name": "Houston",
+      "nickname": "Roughnecks",
+      "abbr": "HOU",
+      "city": "Houston",
+      "colors": {
+        "primary": "#1d3f6e",
+        "secondary": "#c8102e"
+      },
+      "altColors": {
+        "primary": "#c8102e",
+        "secondary": "#1d3f6e"
+      },
+      "stadium": {
+        "name": "Rice Stadium",
+        "capacity": 47000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "USFL",
+      "division": "",
+      "reputation": 2,
+      "prestige": 112,
+      "budget": 1900000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "ufl-mem",
+      "name": "Memphis",
+      "nickname": "Showboats",
+      "abbr": "MEM",
+      "city": "Memphis",
+      "colors": {
+        "primary": "#a6192e",
+        "secondary": "#13284b"
+      },
+      "altColors": {
+        "primary": "#13284b",
+        "secondary": "#a6192e"
+      },
+      "stadium": {
+        "name": "Simmons Bank Liberty Stadium",
+        "capacity": 58000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "USFL",
+      "division": "",
+      "reputation": 2,
+      "prestige": 105,
+      "budget": 1850000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "west_coast",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ufl-stl",
+      "name": "St. Louis",
+      "nickname": "Battlehawks",
+      "abbr": "STL",
+      "city": "St. Louis",
+      "colors": {
+        "primary": "#13284b",
+        "secondary": "#ba0c2f"
+      },
+      "altColors": {
+        "primary": "#ba0c2f",
+        "secondary": "#13284b"
+      },
+      "stadium": {
+        "name": "The Dome at America's Center",
+        "capacity": 67000,
+        "surface": "turf",
+        "dome": true
+      },
+      "conference": "XFL",
+      "division": "",
+      "reputation": 4,
+      "prestige": 150,
+      "budget": 2150000,
+      "aiProfile": "contender",
+      "preferredOffense": "power_run",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "ufl-dc",
+      "name": "DC",
+      "nickname": "Defenders",
+      "abbr": "DC",
+      "city": "Washington",
+      "colors": {
+        "primary": "#c8102e",
+        "secondary": "#101820"
+      },
+      "altColors": {
+        "primary": "#101820",
+        "secondary": "#c8102e"
+      },
+      "stadium": {
+        "name": "Audi Field",
+        "capacity": 20000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "XFL",
+      "division": "",
+      "reputation": 3,
+      "prestige": 130,
+      "budget": 2000000,
+      "aiProfile": "win-now",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "tampa_2"
+    },
+    {
+      "id": "ufl-arl",
+      "name": "Arlington",
+      "nickname": "Renegades",
+      "abbr": "ARL",
+      "city": "Arlington",
+      "colors": {
+        "primary": "#101820",
+        "secondary": "#e35205"
+      },
+      "altColors": {
+        "primary": "#e35205",
+        "secondary": "#101820"
+      },
+      "stadium": {
+        "name": "Choctaw Stadium",
+        "capacity": 25000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "XFL",
+      "division": "",
+      "reputation": 2,
+      "prestige": 100,
+      "budget": 1850000,
+      "aiProfile": "balanced",
+      "preferredOffense": "pistol_rpo",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "ufl-sa",
+      "name": "San Antonio",
+      "nickname": "Brahmas",
+      "abbr": "SA",
+      "city": "San Antonio",
+      "colors": {
+        "primary": "#6cace4",
+        "secondary": "#0b2141"
+      },
+      "altColors": {
+        "primary": "#0b2141",
+        "secondary": "#6cace4"
+      },
+      "stadium": {
+        "name": "Alamodome",
+        "capacity": 64000,
+        "surface": "turf",
+        "dome": true
+      },
+      "conference": "XFL",
+      "division": "",
+      "reputation": 3,
+      "prestige": 128,
+      "budget": 2000000,
+      "aiProfile": "analytics",
+      "preferredOffense": "smashmouth",
+      "preferredDefense": "46_blitz"
+    }
+  ]
+}

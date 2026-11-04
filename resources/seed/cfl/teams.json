@@ -1,0 +1,266 @@
+{
+  "league": "cfl",
+  "teams": [
+    {
+      "id": "cfl-tor",
+      "name": "Toronto",
+      "nickname": "Argonauts",
+      "abbr": "TOR",
+      "city": "Toronto",
+      "colors": {
+        "primary": "#04248c",
+        "secondary": "#6e97c4"
+      },
+      "altColors": {
+        "primary": "#6e97c4",
+        "secondary": "#04248c"
+      },
+      "stadium": {
+        "name": "BMO Field",
+        "capacity": 30000,
+        "surface": "grass",
+        "dome": false
+      },
+      "conference": "East",
+      "division": "",
+      "reputation": 4,
+      "prestige": 160,
+      "budget": 5200000,
+      "aiProfile": "win-now",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "cfl-ott",
+      "name": "Ottawa",
+      "nickname": "Redblacks",
+      "abbr": "OTT",
+      "city": "Ottawa",
+      "colors": {
+        "primary": "#c8102e",
+        "secondary": "#101820"
+      },
+      "altColors": {
+        "primary": "#101820",
+        "secondary": "#c8102e"
+      },
+      "stadium": {
+        "name": "TD Place Stadium",
+        "capacity": 24000,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "East",
+      "division": "",
+      "reputation": 2,
+      "prestige": 105,
+      "budget": 4800000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "west_coast",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "cfl-mtl",
+      "name": "Montreal",
+      "nickname": "Alouettes",
+      "abbr": "MTL",
+      "city": "Montreal",
+      "colors": {
+        "primary": "#013088",
+        "secondary": "#e8112d"
+      },
+      "altColors": {
+        "primary": "#e8112d",
+        "secondary": "#013088"
+      },
+      "stadium": {
+        "name": "Percival Molson Memorial Stadium",
+        "capacity": 23420,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "East",
+      "division": "",
+      "reputation": 4,
+      "prestige": 165,
+      "budget": 5100000,
+      "aiProfile": "contender",
+      "preferredOffense": "spread_option",
+      "preferredDefense": "tampa_2"
+    },
+    {
+      "id": "cfl-ham",
+      "name": "Hamilton",
+      "nickname": "Tiger-Cats",
+      "abbr": "HAM",
+      "city": "Hamilton",
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#ffb81c"
+      },
+      "altColors": {
+        "primary": "#ffb81c",
+        "secondary": "#000000"
+      },
+      "stadium": {
+        "name": "Tim Hortons Field",
+        "capacity": 23218,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "East",
+      "division": "",
+      "reputation": 3,
+      "prestige": 135,
+      "budget": 5000000,
+      "aiProfile": "win-now",
+      "preferredOffense": "vertical",
+      "preferredDefense": "3-4"
+    },
+    {
+      "id": "cfl-bc",
+      "name": "BC",
+      "nickname": "Lions",
+      "abbr": "BC",
+      "city": "Vancouver",
+      "colors": {
+        "primary": "#f47920",
+        "secondary": "#231f20"
+      },
+      "altColors": {
+        "primary": "#231f20",
+        "secondary": "#f47920"
+      },
+      "stadium": {
+        "name": "BC Place",
+        "capacity": 33500,
+        "surface": "turf",
+        "dome": true
+      },
+      "conference": "West",
+      "division": "",
+      "reputation": 3,
+      "prestige": 145,
+      "budget": 5100000,
+      "aiProfile": "win-now",
+      "preferredOffense": "air_raid",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "cfl-cgy",
+      "name": "Calgary",
+      "nickname": "Stampeders",
+      "abbr": "CGY",
+      "city": "Calgary",
+      "colors": {
+        "primary": "#c8102e",
+        "secondary": "#101820"
+      },
+      "altColors": {
+        "primary": "#101820",
+        "secondary": "#c8102e"
+      },
+      "stadium": {
+        "name": "McMahon Stadium",
+        "capacity": 35400,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "West",
+      "division": "",
+      "reputation": 3,
+      "prestige": 148,
+      "budget": 5000000,
+      "aiProfile": "balanced",
+      "preferredOffense": "west_coast",
+      "preferredDefense": "4-3"
+    },
+    {
+      "id": "cfl-edm",
+      "name": "Edmonton",
+      "nickname": "Elks",
+      "abbr": "EDM",
+      "city": "Edmonton",
+      "colors": {
+        "primary": "#24583b",
+        "secondary": "#f2a900"
+      },
+      "altColors": {
+        "primary": "#f2a900",
+        "secondary": "#24583b"
+      },
+      "stadium": {
+        "name": "Commonwealth Stadium",
+        "capacity": 56302,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "West",
+      "division": "",
+      "reputation": 2,
+      "prestige": 110,
+      "budget": 4800000,
+      "aiProfile": "rebuild",
+      "preferredOffense": "vertical",
+      "preferredDefense": "dime"
+    },
+    {
+      "id": "cfl-ssk",
+      "name": "Saskatchewan",
+      "nickname": "Roughriders",
+      "abbr": "SSK",
+      "city": "Regina",
+      "colors": {
+        "primary": "#007a33",
+        "secondary": "#ffffff"
+      },
+      "altColors": {
+        "primary": "#ffffff",
+        "secondary": "#007a33"
+      },
+      "stadium": {
+        "name": "Mosaic Stadium",
+        "capacity": 33350,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "West",
+      "division": "",
+      "reputation": 3,
+      "prestige": 150,
+      "budget": 5000000,
+      "aiProfile": "balanced",
+      "preferredOffense": "pistol_rpo",
+      "preferredDefense": "nickel"
+    },
+    {
+      "id": "cfl-wpg",
+      "name": "Winnipeg",
+      "nickname": "Blue Bombers",
+      "abbr": "WPG",
+      "city": "Winnipeg",
+      "colors": {
+        "primary": "#041e42",
+        "secondary": "#ffb81c"
+      },
+      "altColors": {
+        "primary": "#ffb81c",
+        "secondary": "#041e42"
+      },
+      "stadium": {
+        "name": "Princess Auto Stadium",
+        "capacity": 33234,
+        "surface": "turf",
+        "dome": false
+      },
+      "conference": "West",
+      "division": "",
+      "reputation": 4,
+      "prestige": 175,
+      "budget": 5200000,
+      "aiProfile": "contender",
+      "preferredOffense": "power_run",
+      "preferredDefense": "tampa_2"
+    }
+  ]
+}
